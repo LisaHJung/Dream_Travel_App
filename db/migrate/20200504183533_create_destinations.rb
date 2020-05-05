@@ -2,11 +2,14 @@ class CreateDestinations < ActiveRecord::Migration[6.0]
   def change
     create_table :destinations do |t|
       t.string :name
-      t.text :image
-      t.string :season
+      t.string :location
+      t.string :month
       t.string :travel_party
-
-      t.timestamps
+      t.string :primary_reason
+      t.string :cost
+      t.string :description
+      t.text :image
     end
   end
-endc
+end 
+

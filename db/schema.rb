@@ -14,11 +14,13 @@ ActiveRecord::Schema.define(version: 2020_05_04_183533) do
 
   create_table "destinations", force: :cascade do |t|
     t.string "name"
-    t.text "image"
-    t.string "season"
+    t.string "location"
+    t.string "month"
     t.string "travel_party"
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.string "primary_reason"
+    t.string "cost"
+    t.string "description"
+    t.text "image"
   end
 
 end
