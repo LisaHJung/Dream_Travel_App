@@ -1,17 +1,14 @@
 class DestinationsController < ApplicationController
     def index
-        if params[:season] && params[:travel_party]
-           @destinations = Destination.where(season: params[:season], travel_party: params[:travel_party])
-           render json: @destinations
-        else
-            @destinations = Destination.all 
-            render json: @destinations
+        if params[:month] && params[:travel_party] && params[:primary_reason] && params[:cost]
+           @destinations = Destination.where(month: params[:month], travel_party: params[:travel_party], primary_reason: params[:primary_reason], cost: params[:cost])
+           render json: @destinations, include: [:user], [:vision_boards]
         end
     end 
 
     def show
         @destination = Destination.find(params[:id])
-        render json: @destination
+        render json: @destination, include: [:user], [:vision_boards]
     end 
 
     def create
