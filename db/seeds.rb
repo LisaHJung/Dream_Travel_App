@@ -31,7 +31,7 @@ destination3 = Destination.create(
     month: "January", 
     travel_party: "Group", 
     cost: "$$$", 
-    primary_reason: "Thrill-seeker’s paradise",
+    primary_reason: "Thrill-seeker's paradise",
     description: "Mount Kilimanjaro is a dormant volcano in Tanzania. It has three volcanic cones: Kibo, Mawenzi and Shira. It is the highest mountain in Africa and the highest single free-standing mountain in the world: 5,895 metres above sea level and about 4,900 metres above its plateau base.",
     image: "https://imgur.com/a/nbQtFSH"
     )
@@ -251,7 +251,7 @@ destination22 = Destination.create(
     month: "August", 
     travel_party: "Group", 
     cost: "$$$", 
-    primary_reason: "Thrill-seeker’s paradise",
+    primary_reason: "Thrill-seeker's paradise",
     description: "Experience the premium “Broadwater Adventure” ride - 360° spins, high-speed drifting, power slides, beach-buzzing and other exciting manoeuvres through the beautiful waterways….it’s 55 minutes of ‘full-on’ fun and adventure mixed with wonderful scenery and sightseeing.", 
     image: "https://imgur.com/a/Shwx0uk"
    )
@@ -295,7 +295,7 @@ destination26 = Destination.create(
     month: "November", 
     travel_party: "Couple", 
     cost: "$$", 
-    primary_reason: "Foodies’ heaven",
+    primary_reason: "Foodies' heaven",
     description: "Nowhere else has the desire to connect the wine to the place that produced it been pushed as far, and in such an elaborate manner, as in Burgundy. This has resulted in a highly compartmentalised vineyard structure, expertise oriented towards excellence, outstanding landscapes, towns of exceptional built heritage, in Dijon and Beaune, a specific economy and culture, and a word to describe it all: “climat”.", 
     image: "https://imgur.com/a/zU9KFSX"
    )
@@ -306,7 +306,7 @@ destination27 = Destination.create(
     month: "November", 
     travel_party: "Couple", 
     cost: "$$", 
-    primary_reason: "Foodies’ heaven",
+    primary_reason: "Foodies' heaven",
     description: "Sweeping through the heart of Venice in a giant reverse S curve, the Grand Canal is the principal boulevard through the city, connecting Piazza San Marco, Rialto Bridge, and the arrival points of the rail station and bridge from the mainland.", 
     image: "https://imgur.com/a/0EZYRFG"
    )
