@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_04_183533) do
+ActiveRecord::Schema.define(version: 2020_05_06_201431) do
 
   create_table "destinations", force: :cascade do |t|
     t.string "name"
@@ -23,4 +23,18 @@ ActiveRecord::Schema.define(version: 2020_05_04_183533) do
     t.text "image"
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "user_name"
+  end
+
+  create_table "vision_boards", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "destination_id"
+    t.string "comment"
+    t.index ["destination_id"], name: "index_vision_boards_on_destination_id"
+    t.index ["user_id"], name: "index_vision_boards_on_user_id"
+  end
+
+  add_foreign_key "vision_boards", "destinations"
+  add_foreign_key "vision_boards", "users"
 end

@@ -187,7 +187,7 @@ destination17 = Destination.create(
     cost: "$", 
     primary_reason: "Cultural immersion",
     description: "The Grand Bazaar in Istanbul is one of the largest and oldest covered markets in the world, with 61 covered streets and over 4,000 shops on a total area of 30,700 m², attracting between 250,000 and 400,000 visitors daily.", 
-    image: "https://imgur.com/a/TRMLm5k"
+    image: "https://imgur.com/XwsihhO"
    )
 
 destination18 = Destination.create(
@@ -309,6 +309,7 @@ destination27 = Destination.create(
     primary_reason: "Foodies' heaven",
     description: "Sweeping through the heart of Venice in a giant reverse S curve, the Grand Canal is the principal boulevard through the city, connecting Piazza San Marco, Rialto Bridge, and the arrival points of the rail station and bridge from the mainland.", 
     image: "https://imgur.com/a/0EZYRFG"
+    
    )
 
 destination28 = Destination.create(
