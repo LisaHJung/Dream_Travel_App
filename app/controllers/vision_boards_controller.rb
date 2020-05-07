@@ -1,7 +1,9 @@
 class VisionBoardsController < ApplicationController
     def index
         @vision_boards = VisionBoard.all
-        render json: @vision_boards, include: [:destination, :vision_boards]
+        render json: @vision_boards
+        # redirect_to "http://localhost:3001/vision_board.html"
+        # , include: [:destination, :vision_boards]
      end 
 
     def show

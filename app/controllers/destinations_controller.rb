@@ -4,7 +4,6 @@ class DestinationsController < ApplicationController
            @destinations = Destination.where(month: params[:month], travel_party: params[:travel_party], primary_reason: params[:primary_reason], cost: params[:cost])
            render json: @destinations
         #    , include: [:user, :vision_boards]
-    
         end
     end 
 
