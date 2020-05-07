@@ -17,7 +17,7 @@ class VisionBoardsController < ApplicationController
             destination_id: params[:destination_id],
             comment: params[:comment]
         )
-        render json: @vision_board
+        redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}"
     end
 
     def update
@@ -30,11 +30,11 @@ class VisionBoardsController < ApplicationController
         render json: @vision_board
     end 
 
-def destroy
-    @vision_boards = VisionBoard.all
-    @vision_board = VisionBoard.find(params[:id])
-    @vision_board.destroy
-    render json: @vision_boards
-end 
+    def destroy
+        @vision_boards = VisionBoard.all
+        @vision_board = VisionBoard.find(params[:id])
+        @vision_board.destroy
+        render json: @vision_boards
+    end 
 
 end
