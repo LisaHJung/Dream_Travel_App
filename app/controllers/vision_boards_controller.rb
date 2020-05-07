@@ -8,7 +8,8 @@ class VisionBoardsController < ApplicationController
 
     def show
         @vision_board = VisionBoard.find(params[:id])
-        render json: @vision_board, include: [:destination, :vision_boards]
+        render json: @vision_board
+        # , include: [:destinations, :vision_boards]
     end 
 
     def create
@@ -26,15 +27,15 @@ class VisionBoardsController < ApplicationController
             user_id: params[:user_id],
             destination_id: params[:destination_id],
             comment: params[:comment]
-        )
-        render json: @vision_board
+            )
+            redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}"
     end 
 
-    def destroy
+    def destroy_pinned_destination
         @vision_boards = VisionBoard.all
         @vision_board = VisionBoard.find(params[:id])
         @vision_board.destroy
-        render json: @vision_boards
+        redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}"
     end 
 
 end
