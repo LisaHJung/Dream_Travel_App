@@ -3,6 +3,7 @@ class CreateDestinations < ActiveRecord::Migration[6.0]
     create_table :destinations do |t|
       t.string :name
       t.string :location
+      t.string :city
       t.string :month
       t.string :travel_party
       t.string :primary_reason

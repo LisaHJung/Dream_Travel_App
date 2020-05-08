@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 2020_05_06_201431) do
   create_table "destinations", force: :cascade do |t|
     t.string "name"
     t.string "location"
+    t.string "city"
     t.string "month"
     t.string "travel_party"
     t.string "primary_reason"
