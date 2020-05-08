@@ -6,6 +6,7 @@ Destination.destroy_all
 destination1 = Destination.create(
     name: "The Maldives", 
     location: "Indian Ocean", 
+    city: "Mahibadhoo",
     month: "January", 
     travel_party: "Couple", 
     cost: "$$$", 
@@ -17,6 +18,7 @@ destination1 = Destination.create(
 destination2 = Destination.create(
     name: "Ice Hotel", 
     location: "Jukkasjärvi, Sweden", 
+    city: "Jukkasjärvi",
     month: "January", 
     travel_party: "Couple", 
     cost: "$$$", 
@@ -28,6 +30,7 @@ destination2 = Destination.create(
 destination3 = Destination.create(
     name: "Mt. Kilimanjaro", 
     location: "Kilimanjaro Region, north east Tanzania", 
+    city: "Moshi",
     month: "January", 
     travel_party: "Group", 
     cost: "$$$", 
@@ -39,6 +42,7 @@ destination3 = Destination.create(
 destination4 = Destination.create(
     name: "Antartica", 
     location: "Southernmost continent and site of the South Pole", 
+    city: "Christchurch",
     month: "February", 
     travel_party: "Group", 
     cost: "$$$", 
@@ -50,6 +54,7 @@ destination4 = Destination.create(
 destination5 = Destination.create(
     name: "Luxor", 
     location: "East bank of the Nile River in southern Egypt", 
+    city: "Luxor",
     month: "February", 
     travel_party: "Group", 
     cost: "$$", 
@@ -61,6 +66,7 @@ destination5 = Destination.create(
 destination6 = Destination.create(
     name: "Florida Keys", 
     location: " Florida Straits", 
+    city: "Keys",
     month: "February", 
     travel_party: "Family", 
     cost: "$$", 
@@ -72,6 +78,7 @@ destination6 = Destination.create(
 destination7 = Destination.create(
     name: "Havana", 
     location: "Havana Cuba", 
+    city: "Havana",
     month: "February", 
     travel_party: "Couple", 
     cost: "$", 
@@ -83,6 +90,7 @@ destination7 = Destination.create(
 destination8 = Destination.create(
     name: "Krabi", 
     location: "Krabi,Thailand", 
+    city: "Krabi",
     month: "February", 
     travel_party: "Group", 
     cost: "$", 
@@ -94,6 +102,7 @@ destination8 = Destination.create(
 destination9 = Destination.create(
     name: "Waitomo Glowworm Cave", 
     location: "Otorohanga, New Zealand", 
+    city: "Otorohanga",
     month: "February", 
     travel_party: "Family", 
     cost: "$$$", 
@@ -105,6 +114,7 @@ destination9 = Destination.create(
 destination10 = Destination.create(
     name: "Carnival of Brazil", 
     location: "Rio de Janiero, Brazil", 
+    city: "Salvador",
     month: "February", 
     travel_party: "Group", 
     cost: "$$", 
@@ -116,6 +126,7 @@ destination10 = Destination.create(
 destination11 = Destination.create(
     name: "Yucatán", 
     location: "Yucatán, Mexico", 
+    city: "Yucatan",
     month: "March", 
     travel_party: "Family", 
     cost: "$", 
@@ -127,6 +138,7 @@ destination11 = Destination.create(
 destination12 = Destination.create(
     name: "Marrakech", 
     location: "Marrakech, Morocco", 
+    city: "Marrakech",
     month: "March", 
     travel_party: "Group", 
     cost: "$", 
@@ -138,6 +150,7 @@ destination12 = Destination.create(
 destination13 = Destination.create(
     name: "Perhentian Islands", 
     location: "South China Sea, Malaysia", 
+    city: "Kota Bharu",
     month: "March", 
     travel_party: "Family", 
     cost: "$", 
@@ -150,6 +163,7 @@ destination14 = Destination.create(
     name: "Devil's Throat in Iguazu Falls", 
     location: "Argentina: Misiones Province Brazil: Paraná State", 
     month: "April", 
+    city: "Foz do Iguaçu",
     travel_party: "Family", 
     cost: "$", 
     primary_reason: "Jaw dropping scenery",
@@ -160,6 +174,7 @@ destination14 = Destination.create(
 destination15 = Destination.create(
     name: "Maruyama Park", 
     location: "Kyoto, Japan", 
+    city: "Kyoto",
     month: "April", 
     travel_party: "Family", 
     cost: "$$$", 
@@ -170,7 +185,8 @@ destination15 = Destination.create(
 
 destination16 = Destination.create(
     name: "Galápagos Islands", 
-    location: "Pacific Ocean, Ecuador", 
+    location: "Pacific Ocean, Ecuador",
+    city: "Puerto Baquerizo Moreno", 
     month: "April", 
     travel_party: "Family", 
     cost: "$$", 
@@ -182,6 +198,7 @@ destination16 = Destination.create(
 destination17 = Destination.create(
     name: "Grand Bazaar", 
     location: "Istanbul, Turkey", 
+    city: "Istanbul", 
     month: "April", 
     travel_party: "Solo", 
     cost: "$", 
@@ -192,7 +209,8 @@ destination17 = Destination.create(
 
 destination18 = Destination.create(
     name: "Tanah Lot Temple", 
-    location: "Bali, Indonesia", 
+    location: "Bali, Indonesia",
+    city: "Bali", 
     month: "May", 
     travel_party: "Solo", 
     cost: "$", 
@@ -203,7 +221,8 @@ destination18 = Destination.create(
 
 destination19 = Destination.create(
     name: "Victoria Falls", 
-    location: "Bali, Indonesia", 
+    location: "Livingstone, Zambia", 
+    city: "Livingstone",
     month: "May", 
     travel_party: "Group", 
     cost: "$", 
@@ -215,6 +234,7 @@ destination19 = Destination.create(
 destination19 = Destination.create(
     name: "Machu Pichu", 
     location: "Cuzco, Peru", 
+    city: "Cuzco",
     month: "June", 
     travel_party: "Group", 
     cost: "$$", 
@@ -226,6 +246,7 @@ destination19 = Destination.create(
 destination20 = Destination.create(
     name: "Kruger National Park", 
     location: "Northeastern South Africa", 
+    city: "Nelspruit",
     month: "June", 
     travel_party: "Family", 
     cost: "$$$", 
@@ -237,6 +258,7 @@ destination20 = Destination.create(
 destination21 = Destination.create(
     name: "Festival d'été de Québec", 
     location: "Quebec, Canada", 
+    city: "Quebec",
     month: "July", 
     travel_party: "Couple", 
     cost: "$$", 
@@ -248,6 +270,7 @@ destination21 = Destination.create(
 destination22 = Destination.create(
     name: "Jetboat Ride", 
     location: "Queensland, Australia", 
+    city: "Queensland",
     month: "August", 
     travel_party: "Group", 
     cost: "$$$", 
@@ -259,6 +282,7 @@ destination22 = Destination.create(
 destination23 = Destination.create(
     name: "La Mercè", 
     location: "Barcelona, Spain", 
+    city: "Barcelona",
     month: "September", 
     travel_party: "Solo", 
     cost: "$$", 
@@ -270,6 +294,7 @@ destination23 = Destination.create(
 destination24 = Destination.create(
     name: "Wailua Falls", 
     location: "Kauai,Hawaii", 
+    city: "Lihue",
     month: "October", 
     travel_party: "Family", 
     cost: "$$$", 
@@ -281,6 +306,7 @@ destination24 = Destination.create(
 destination25 = Destination.create(
     name: "La Viruta", 
     location: "Buenos Aires, Argentina", 
+    city: "Buenos Aires",
     month: "October", 
     travel_party: "Couple", 
     cost: "$$", 
@@ -290,8 +316,9 @@ destination25 = Destination.create(
    )
 
 destination26 = Destination.create(
-    name: "Burgandy Vineyards", 
-    location: "Burgandy, France", 
+    name: "Burgundy Vineyards", 
+    location: "Burgundy, France", 
+    city: "Auxerre",
     month: "November", 
     travel_party: "Couple", 
     cost: "$$", 
@@ -303,6 +330,7 @@ destination26 = Destination.create(
 destination27 = Destination.create(
     name: "Canale Grande", 
     location: "Venice, Italy", 
+    city: "Venice",
     month: "November", 
     travel_party: "Couple", 
     cost: "$$", 
@@ -314,6 +342,7 @@ destination27 = Destination.create(
 destination28 = Destination.create(
     name: "Aitutaki Cooks Islands", 
     location: "South Pacific", 
+    city: "Amuri",
     month: "November", 
     travel_party: "Couple", 
     cost: "$$", 
@@ -325,6 +354,7 @@ destination28 = Destination.create(
 destination29 = Destination.create(
     name: "Smuggler's cove", 
     location: "British Virgin Islands", 
+    city: "Tortola",
     month: "December", 
     travel_party: "Couple", 
     cost: "$$", 
@@ -335,7 +365,8 @@ destination29 = Destination.create(
 
 destination30 = Destination.create(
     name: "Hotel Kakslauttanen", 
-    location: "Finnish Lapland", 
+    location: "Saariselkä, Finland", 
+    city: "Ivalo",
     month: "December", 
     travel_party: "Couple", 
     cost: "$$", 
