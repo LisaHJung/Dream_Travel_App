@@ -29,7 +29,8 @@ class VisionBoardsController < ApplicationController
     def destroy_pinned_destination
         @vision_boards = VisionBoard.all
         @vision_board = VisionBoard.find(params[:id])
-        @vision_board.destroy
-        redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}&is_deleted=#{is_deleted}"
+        is_deleted = @vision_board.destroy
+        @is_deleted =true
+        redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}&is_deleted=#{@is_deleted}"
     end 
 end
