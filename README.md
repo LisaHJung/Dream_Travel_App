@@ -52,45 +52,24 @@ lite-server
 ## Code Examples
 ```ruby
 <body>
-    <div class="comment-update">
-        <form action="" method="post">
-            <input type="hidden" name ="_method" value="patch">
-            <input type="hidden" id="user_id" name ="user_id">
-            <input type="hidden" id="destination_id" name ="destination_id">
-            <input type="string" name="comment" placeholder = "Write comment here">
-            <input type="submit" value="Add my comment to selected destination">
-        </form>
-    </div>
-    <div class="delete-destination">
-        <form action="" method="post">
-            <input type="hidden" name ="_method" value="delete">
-            <input type="hidden" id="user_id" name ="user_id">
-            <input type="hidden" id="destination_id" name ="destination_id">
-            <input type="submit" value="Delete my destination">
-        </form>
-    </div>
-</body>
+     def create
+        @vision_board = VisionBoard.create(
+            user_id: params[:user_id],
+            destination_id: params[:destination_id],
+            comment: params[:comment]
+        )
+        redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}"
+    end
 ```
 
 ```ruby
-const params = new URLSearchParams(window.location.search)
-const vb_id = params.get("vision_board_id")
-
-const commentUpdateForm=document.querySelector(".comment-update > form")
-commentUpdateForm.action=`http://localhost:3000/vision_boards/${vb_id}`
-
-const deleteDestination=document.querySelector(".delete-destination > form")
-deleteDestination.action=`http://localhost:3000/vision_boards/${vb_id}`
-
-const isUpdated = params.get("is_updated")
-    if (isUpdated){
-        alert("Your comment has been successfully updated!")
-    }
-
-const isDeleted = params.get("is_deleted")
-    if (isDeleted ){
-        alert("The destination has been deleted!")
-    }
+def destroy_pinned_destination
+        @vision_boards = VisionBoard.all
+        @vision_board = VisionBoard.find(params[:id])
+        is_deleted = @vision_board.destroy
+        @is_deleted =true
+        redirect_to "http://localhost:3001/vision_board.html?vision_board_id=#{@vision_board.id}&user_id=#{@vision_board.user_id}&destination_id=#{@vision_board.destination_id}&is_deleted=#{@is_deleted}"
+    end 
 ```
 
 ## Features
@@ -121,7 +100,7 @@ Hope you all enjoy our website and get your adventure on as soon as this pandemi
 
 
 ## Contact
-Created by [Lisa Jung](https://www.linkedin.com/in/lisa-jung-23304b53/) and [Ryan Anderson]()
+Created by [Lisa Jung](https://www.linkedin.com/in/lisa-jung-23304b53/) and [Ryan Anderson](linkedin.com/in/ryan-anderson-bab07967)
 
 Feel free to contact us!!! 
 
